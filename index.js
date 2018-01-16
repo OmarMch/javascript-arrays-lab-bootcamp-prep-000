@@ -27,9 +27,11 @@ function prependKitten(name) {
 }
 
 function removeLastKitten(name) {
-  return kittens.slice(0, kittens.length -1);
+  return kittens.slice(0, kittens.length -1); //nondestructive way to remove last element in an array
+  //begin at index 0 of array.lenght and remove last
 }
 
 function removeFirstKitten(name) {
-  return kittens.slice(1);
+  return kittens.slice(1); //remove first element without changing actual array value.
+  // var kittens = kittens.slice(1); //if wish to mutate changes.
 }
